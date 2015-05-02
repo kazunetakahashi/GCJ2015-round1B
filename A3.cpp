@@ -22,10 +22,6 @@ ll rev(ll x) {
 
 void output() {
   ll ans = 1;
-  if (n%10 != 0 && rev(n) < n) {
-    n = rev(n);
-    ans++;
-  }
   string S = to_string(n);
   string SS = S;
   for (unsigned i=(SS.size()+1)/2; i<SS.size(); i++) {
